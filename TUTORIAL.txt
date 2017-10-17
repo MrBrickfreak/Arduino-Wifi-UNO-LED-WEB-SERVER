@@ -1,14 +1,15 @@
-Step 1:
-Connect components to each other.
-You can find scheme in img folder
+Step 1: Setup of the WiFi module
+1.Power up Arduino board. In several seconds in the list of available networks will appear new network — with the name Arduino-Uno-WiFi-****** where ****** — unique number of a board.
+2.Connect to the found network and come in the browser to the address:
+192.168.240.1
+The web interface of setup of a board Arduino will open.
+3.Come into network settings of a board, clicking the CHANGE button in the SSID Network point.
+4.Select your Wi-Fi a network from the list of available networks, enter the password and connect to it.
+5.In case of successful connection to Wi-Fi of a network information on the appropriated IP address will appear. Remember or write it. In our example we received the address 192.168.43.17.
+6.Now on Arduino Uno WiFi it is possible to come from any device connected to this network.
 Step 2:
-Connect your Arduino board to computer
-Connect to your Arduino borad via Wifi
-Type 192.168.240.1
-Change your network SSID
-After that your ip will be changed
-Use your devices to connect to your board through that ip address you got
-Step 3:
-Uplaod your code to arduino from IDE
+Create your code/Create your scheme using led,resistor and wires
+Upload it to Arduino using Arduino IDE
+If you completed everything listed in Step 1 you can freely open your web browser on all devices connected to your home network!
 Go to site (YOUR IP ADDRESS HERE)/arduino/webserver/
 
