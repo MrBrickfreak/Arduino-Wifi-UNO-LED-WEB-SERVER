@@ -1,4 +1,4 @@
-Wifi web server for the Arduino WIFI UNO platform driving a LED - Arduino sketch
+Wifi web server for the Arduino WIFI UNO platform for using a LED on/off command - Arduino sketch
 
 Description: An Arduino sketch for running web server on main board. Designed to controll the Led using 
 buttons on site.
