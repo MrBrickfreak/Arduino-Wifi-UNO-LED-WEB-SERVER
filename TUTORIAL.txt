@@ -1,0 +1,14 @@
+Step 1:
+Connect components to each other.
+You can find scheme in img folder
+Step 2:
+Connect your Arduino board to computer
+Connect to your Arduino borad via Wifi
+Type 192.168.240.1
+Change your network SSID
+After that your ip will be changed
+Use your devices to connect to your board through that ip address you got
+Step 3:
+Uplaod your code to arduino from IDE
+Go to site (YOUR IP ADDRESS HERE)/arduino/webserver/
+
