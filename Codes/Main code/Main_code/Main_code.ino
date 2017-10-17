@@ -4,7 +4,7 @@
 void setup() {
   pinMode(9, OUTPUT);
   Wifi.begin();
-  Wifi.println("Web Server is f up");
+  Wifi.println("Web Server is up");
 }
 void loop() {
 
@@ -15,10 +15,9 @@ void loop() {
 }
 
 void process(WifiData client) {
-  // 4itajet komandu
+  // reads command 
   String command = client.readStringUntil('/');
 
-  // uzhe zaputalsa
   if (command == "webserver") {
     WebServer(client);
   }
@@ -43,7 +42,7 @@ void WebServer(WifiData client) {
 
   client.print("</body>");
   client.println("</html>");
-  client.print(DELIMITER); // ochen vazhno zakan4ivat tak !!!11one
+  client.print(DELIMITER); 
 
 }
 
@@ -53,8 +52,6 @@ void digitalCommand(WifiData client) {
   // Read pin number
   pin = client.parseInt();
 
-  // jesli sledushij simbol eot '/' to eto zna4it u nas jest URL
-  // vmeste s value liek: "/digital/9/1"
   if (client.read() == '/') {
     value = client.parseInt();
     digitalWrite(pin, value);
